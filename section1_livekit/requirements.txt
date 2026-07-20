@@ -1,0 +1,10 @@
+# --- Voice pipeline: Deepgram STT -> Ollama LLM -> Cartesia TTS ---
+livekit-agents>=1.0.0
+livekit-plugins-openai>=1.0.0      # LLM via Ollama's OpenAI-compatible API
+livekit-plugins-deepgram>=1.0.0    # STT (nova-2)
+livekit-plugins-cartesia>=1.0.0    # TTS (sonic-2)
+livekit-plugins-silero>=1.0.0      # VAD, for barge-in
+
+# --- Text demos, preflight check, and tests ---
+openai>=1.30.0
+python-dotenv>=1.0.0

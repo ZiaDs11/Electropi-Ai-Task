@@ -1,0 +1,9 @@
+torch>=2.2.0
+transformers>=4.44.0
+accelerate>=0.33.0
+sentencepiece>=0.2.0
+psutil>=5.9.0             # memory measurement on Windows
+huggingface-hub>=0.23.0   # GGUF download via llama_cpp.Llama.from_pretrained
+# GGUF leg — install the prebuilt CPU wheel (plain pip builds from source, needs MSVC):
+#   pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+# bitsandbytes>=0.43.0    # only for --precision int4 on a CUDA GPU
